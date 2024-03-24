@@ -1,0 +1,28 @@
+.border {
+    border: 2px solid red;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.flex {
+    display: flex;
+} 
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.mg {
+    margin: 5px;
+}
+
+.invert {
+    filter: invert(1);
+}
