@@ -89,7 +89,7 @@ async function displayFoldler(){
             let response = await a.json()
             document.querySelector(".music-playlists").innerHTML = document.querySelector(".music-playlists").innerHTML + `<div data-folder="${folder}" class="card">
             <img src="/songs/${folder}/cover.jpg" alt="image">
-            <svg class="playCircle" xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 30 30" width="24" height="24">
+            <svg class="playCircle" xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 30 30" width="30" height="30">
                 <!-- Circle background -->
                 <circle cx="12" cy="12" r="15" fill="#00FF00" />
                 
