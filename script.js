@@ -31,7 +31,7 @@ const playMusic = (track , pause=false) => {
 
 async function getSongs(folder) {
     currFolder = `songs/` + folder
-    let a = await fetch(`/songs/${folder}/`)
+    let a = await fetch(`/Spotify-Clone/songs/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML=response
@@ -74,7 +74,7 @@ async function getSongs(folder) {
 
 
 async function displayFoldler(){
-    let a = await fetch(`/songs/`)
+    let a = await fetch(`/Spotify-Clone/songs/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML=response
@@ -85,10 +85,10 @@ async function displayFoldler(){
         if(element.href.includes("/songs/") && !element.href.includes(".htaccess")){
             let folder = element.href.split("/").slice(-2)[0]
             // Get the metadata of the folder
-            let a = await fetch(`/songs/${folder}/info.json`)
+            let a = await fetch(`/Spotify-Clone/songs/${folder}/info.json`)
             let response = await a.json()
             document.querySelector(".music-playlists").innerHTML = document.querySelector(".music-playlists").innerHTML + `<div data-folder="${folder}" class="card">
-            <img src="/songs/${folder}/cover.jpg" alt="image">
+            <img src="/Spotify-Clone/songs/${folder}/cover.jpg" alt="image">
             <svg class="playCircle" xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 30 30" width="30" height="30">
                 <!-- Circle background -->
                 <circle cx="12" cy="12" r="15" fill="#00FF00" />
