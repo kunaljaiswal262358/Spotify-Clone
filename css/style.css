@@ -2,7 +2,7 @@
 
 :root {
     --a:0;
-    --b:200px;
+    --b:60px;
 }
 
 * {
@@ -44,7 +44,7 @@ ul li img {
     padding: 15px;
     margin: 9px;
     border-radius: 5px;
-    height: 76vh;
+    height: 68vh;
     overflow: auto;
 }
 
@@ -190,7 +190,7 @@ ul li img {
 
 .card .playCircle {
     position: absolute;
-    top: var(--b);
+    bottom: var(--b);
     right: 36px;
     opacity: var(--a);
     transition: all 1s;
@@ -199,7 +199,7 @@ ul li img {
 .card:hover{
     cursor: pointer;
     --a: 1;
-    --b: 180px;
+    --b: 80px;
     background-color: #1b1818;
 }
 
